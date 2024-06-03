@@ -14,3 +14,5 @@ function changeMainBgColor(){
     colorHex.innerText=color;
 }
 
+let nasr="nasr"
+;
