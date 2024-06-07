@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.nav-bar{
+    padding: 10px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* height: 10vh; */
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+ a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-item{
+    padding: 10px;
+    letter-spacing: 3px;
+}
+.nav-items{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav-socials{
+    width: fit-content;
+}
+
+.soacials-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.soacials-list i{
+    font-size: 20px;
+    padding: 8px;
+}
+
+.soacials-list a{
+    color:  hsl(205, 78%, 60%);
+}
+.toggle-btn{
+    border: none;
+    background: none;
+    color: hsl(205, 78%, 60%);
+    cursor: pointer;
+    display: none;
+}
+.toggle-btn i{
+    font-size: 25px;
+}
+
+main{
+    min-height: 90vh;
+    background-color: hsl(210, 36%, 96%);;
+}
+@media only screen and (max-width: 900px) {
+    header{
+        display: block;
+    }
+    .nav-bar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-list{
+        display: block;
+        margin-top: 25px;
+      
+        
+    }
+    .nav-items{
+        
+        height: 0;
+        overflow: hidden;
+        transition: 0.4s;
+
+    }
+    .nav-item{
+        margin-top: 5px;
+        padding: 10px;
+        transition: 0.3s;
+        width: 100%;
+        
+    }
+    .nav-item:hover{
+        padding: 20px;
+        background-color: hsl(205, 73%, 72%);
+    }
+    .nav-socials{
+        display: none;
+    }
+    .toggle-btn{
+        display: block;
+        transition: 0.4s;
+    }
+    .toggle-btn:hover{
+        transform: rotate(90deg);
+
+    }
+    .hidden{
+        height: 220px ;
+    }
+}
+@media only screen and (min-width: 900px) {
+    .toggle-btn{
+        display: none;
+    }
+}
+
+
