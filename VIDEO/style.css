@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+main{
+    font-family: "Roboto", sans-serif;
+    background-color: rgba(0, 0, 0, 0.656);
+    min-height:100vh ;
+}
+  #myVideo{
+    position: fixed;
+    top: 0;
+  left: 0;
+    width: 100%; 
+    height: 100vh;
+    z-index: -2;
+    object-fit: cover;
+
+  }
+
+  .content{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ }
+  .header{
+    font-size: 75px;
+    color: white;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    text-transform: capitalize;
+  }
+
+  .switch-btns{
+    border: red 2px solid;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    margin-left: 100px;
+    margin-bottom: 5000px;
+    /* transition: var(--transition); */
+    position: fixed;
+    background-color: white;
+    width: 160px;
+    padding: 5px;
+    margin-bottom:500px; 
+  }
+
+  .btn{
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 5px;
+    width: 70px;
+    height: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    transition: 0.3s;
+
+
+    }
+    .btn-hide{
+        background-color: black;
+        
+    }
+
+    .btn:hover{
+        background-color: rgba(128, 128, 128, 0.638);
+        color: white;
+    }
