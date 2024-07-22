@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:  hsl(210, 36%, 96%);
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    min-height: 100vh;
+}
+
+main{
+    min-height: 100vh;
+    /* border: rgb(208, 255, 0) 1px dotted; */
+
+}
+.section{
+    /* border: rgb(255, 0, 123) 1px dotted; */
+    /* margin-top: 100px ; */
+    padding: 75px 0;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.section-header{
+    text-align: center;
+}
+.section-header h2{
+    color: hsl(209, 61%, 16%);
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 600;
+}
+.section-header p{
+    margin-top: 10px;
+    color: hsl(210, 22%, 49%);
+    font-size: 16px;
+    font-weight: 400;
+    word-spacing: 2px;
+}
+.section-body{
+    margin-top: 60px;
+    /* border: red 1px dotted; */
+    display: grid;
+    gap: 35px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+}
+.section-body img{
+    border-radius: 10px;
+    width: 560px;
+    height: 320px;
+    object-fit: cover;
+
+}
+.infos-btns{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+
+}
+.btn{
+    background: hsl(212, 33%, 89%);
+    border: none;
+    padding:18px ;
+    font-size: 16px;
+    letter-spacing: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: capitalize;
+}
+.btn:hover{
+    background-color: hsl(205, 100%, 96%);
+    color: #49a6e9;
+}
+.btn:nth-child(1){
+    border-top-left-radius: 10px;
+}
+.btn:nth-child(3){
+    border-top-right-radius: 10px;
+}
+.activeBtn{
+    background-color: white;
+}
+.info{
+    display: none;
+    padding: 20px;
+    background-color: white;
+    min-height:280px; 
+    line-height: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+.infos-container{
+    width: 100%;
+}
+.infoShow{
+    display: block;
+}
+.info p{
+    color: hsl(210, 22%, 49%);
+    
+}
+.info h3{
+    font-size: 16px;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+}

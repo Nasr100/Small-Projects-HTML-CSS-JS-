@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%; 
+    min-height:100vh ;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    background-color: hsl(210, 36%, 96%);
+}
+.container{
+    /* width: 77%; */
+    width: 95vw;;
+    display: grid;
+    align-items: center;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    padding: 85px 0;
+    gap: 40px;
+}
+
+.container img{
+    width: 570px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.description{
+    padding: 20px 5px;
+    width: 100%;
+    display: block;
+} 
+.description-header{
+    word-spacing: 3px;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+
+}
+.description-header h2{
+    margin-bottom: 5px;
+    color: hsl(205, 72%, 37%);
+    font-size:30px;
+}   
+.description-header p{
+    font-weight: bold;
+    font-size: 15px;
+}
+.description-body p{
+    font-size: 17px;
+    line-height: 25px;
+    color: hsl(209, 23%, 60%);
+}
+.countdown-container{
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: fit-content;
+
+}
+.countdown-item{
+        padding: 8px 0;
+        width: 79px;
+        height: 79px;
+        background-color: hsl(209, 61%, 16%);
+        margin-right: 20px;
+
+}
+
+.countdown-item h4{
+    font-size: 31px;
+    margin-bottom: 2px;
+    letter-spacing: 4px;
+
+
+}
+.countdown-item span{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 2px;
+
+}
+
+@media screen and (max-width: 992px) {
+    .container{
+        grid-template-columns: 1fr;
+        width: 92%;
+        gap: 0;
+    }
+}
