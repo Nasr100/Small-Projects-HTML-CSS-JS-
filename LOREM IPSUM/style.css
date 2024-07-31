@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(210, 36%, 96%);
+    min-height: 100vh;
+    font-family: "Open Sans", sans-serif;
+}
+
+.container{
+    margin: 0 auto;
+    padding-top: 70px;
+    width: 40%;
+    text-align: center;
+}
+.container h2{
+    color: hsl(205, 86%, 17%);
+    letter-spacing: 5px;
+    font-size: 27px;
+}
+.formContainer{
+    margin-top: 35px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formContainer label{
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+.formContainer input{
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    width: 70px;
+    padding: 5px 10px;
+    font-size: 20px;
+    margin: 0 10px
+}
+
+.formContainer button {
+    height: 35px;
+    width: 120px;
+    cursor: pointer;
+    border: 2px solid #49a6e9;
+    font-size: 15px;
+    border-radius: 10px;
+    color: hsl(205, 86%, 17%);
+    letter-spacing: 1px;
+    font-weight: 500;
+    background-color: #49a6e9;
+    text-transform: uppercase;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.formContainer button:hover{
+    color: #49a6e9;
+    background-color: hsl(205, 86%, 81%);
+    border: 2px solid hsl(205, 86%, 81%);
+}
+
+.paragraphs p{
+    line-height: 25px;
+    color: hsl(210, 22%, 49%);
+    margin-bottom: 25px;
+    font-weight: 400;
+}
